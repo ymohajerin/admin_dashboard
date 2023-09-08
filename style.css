@@ -150,7 +150,7 @@ li{
     letter-spacing: 0.04rem;
   }
   .profile-picture{
-    background-image: url("assets/daoudi-aissa-WIy-npjhus8-unsplash.jpg");
+    background-image: url("assets/abhipsa-pal-ILra9AOaXOE-unsplash.jpg");
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size:cover; /* Resize the background image to cover the entire container */
@@ -280,7 +280,7 @@ li{
     font-size: 1.1rem;
     padding-bottom: 0.4rem;;
   }
-  h2+p{
+  h2+p, .profile-name, .profile-username{
     font-size: 0.85rem;
     color: rgb(88, 87, 87);
     font-weight: 400; 
@@ -335,6 +335,43 @@ li{
     -webkit-font-smoothing: antialiased; 
 
   }
-  
+  .profile-picture{
+    grid-row: 1/-1;
+    align-self: center;
+  }
+  .profile-username{
+    align-self: self-end;
+  }
+  .trending .profile-picture{
+    position: static;
+    margin-right: 1rem;
+
+  }
+  .trending-profile:first-of-type{
+    padding-top: 0;
+  }
+  .trending-profile:last-of-type{
+    padding-bottom: 0;
+  }
+  .trending-profile{
+    padding: 0.5rem;
+    
+  }
+  .profile-name{
+    font-size: 0.8rem;
+  }
+  .profile-username{
+    font-weight: 500 ;
+    padding-top: 0.3rem;
+  }
+  #tegan{
+    background-image: url(assets/javier-miranda-MrWOCGKFVDg-unsplash.jpg);
+  }
+  #kendall{
+    background-image: url(assets/milad-fakurian-wNsHBf_bTBo-unsplash.jpg);
+  }
+  #alex{
+    background-image: url(assets/roman-synkevych-UT8LMo-wlyk-unsplash.jpg);
+  }
 
   
