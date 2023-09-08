@@ -24,18 +24,22 @@ body{
 
 }
 .sidebar{
+  font-size: 1.1rem;
+  font-weight: 500;
     text-shadow: 0.1rem 0.1rem 0.1rem rgb(0, 0, 0, 0.1);
     background-color: rgb(25,146,212);
     height: 100%;
     grid-column: 1;
     grid-row: 1 / -1;
-    display: grid;
-    grid-template-rows: 1fr 3fr  6fr;
-    gap: 1.5rem;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.5rem;
+    justify-content: flex-start;
     padding-top: 1.1rem;
     box-shadow: 1px 1px 2px 1px rgb(0, 0, 0, 0.1);
-    z-index: 2
+    z-index: 2;
+    padding-right: max(2rem, auto);
     
 }
 header{
@@ -79,12 +83,12 @@ a{
 li{
     padding-bottom: 0.9rem;
     display: flex;
+    gap: 0.5rem;
     justify-content: flex-start;
     align-items: center;
 }
 .sidebar-header{
-    position: relative;
-    right: 0.7rem;
+    padding-left: 1.29rem;
     grid-row: 1;
     display: flex;
     justify-content: flex-start;
@@ -93,10 +97,12 @@ li{
 .title{
     font-size: 1.4rem;
 }
-.sidebar-main{
+.sidebar-main{padding-left:1.5rem;
+
     grid-row:2;
 }
 .sidebar-subsection{
+  padding-left:1.5rem;
     grid-row: 3;
 }
 .sidebar-header>.icon{
@@ -222,6 +228,9 @@ li{
     padding: 1.5rem;
     padding-top: 0;
   }
+  .announcements, .trending-card{
+    padding: 1.5rem;
+  }
   .cards, .announcements, .trending-card{
     background-color: white;
     border-radius: 8px;
@@ -269,7 +278,7 @@ li{
   }
   h2{
     font-size: 1.1rem;
-    padding-bottom: 0.7rem;
+    padding-bottom: 0.4rem;;
   }
   h2+p{
     font-size: 0.85rem;
@@ -285,15 +294,47 @@ li{
     gap: 1.3rem;
     padding-right: 1rem;
   }
-  .main-left{
+  .main-right{
     display: grid;
     grid-template-rows: 1fr 1fr;
     margin-right: 1.8rem;
     gap: 1.5rem;
   }
-  .trending-card{
+  .trending{
     display: grid;
-    grid-row: 1fr 4fr;
+    grid-template-rows: 2rem 1fr;
+    padding-bottom: 1.5rem;
   }
+  .trending-header{
+    font-size: 1.2rem;
+    padding-bottom: 0;
+    color: rgb(56, 56, 56);
+    font-weight: 500;
+  }
+  .trending-card{
+    margin-top: 0;
+    display: grid;
+    grid-row: repeat(4, 1fr);
+  }
+  .announcement-post{
+    padding: 0.5rem;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.3);
+  }
+  .announcement-post:last-of-type{
+    border-bottom: none;
+  }
+  .announcement-post h3{
+    font-size: 0.95rem;
+    padding-bottom: 0.3rem;
+  }
+  .announcement-post p{
+    
+    font-size: 0.75rem;
+    color: rgb(88, 87, 87);
+    font-weight: 400; 
+    -webkit-font-smoothing: antialiased; 
+
+  }
+  
 
   
