@@ -63,6 +63,13 @@ input{
     border-radius: 10px;
     border: none;
     background-color: rgb(226,232,240);
+    outline: none;
+    padding: 0.5rem;
+}
+input:focus{
+  box-shadow: 0.5px 1px 3px 2px rgb(0, 0, 0, 0.2);
+    
+
 }
 .main{
     grid-column: 2;
@@ -77,6 +84,11 @@ ul{
     height: 100%;
     list-style: none;
 }
+li:hover{
+  transform: scale(1.06);
+  text-shadow: 0.2rem 0.2rem 0.4rem rgb(0, 0, 0, 0.3);
+
+}
 a{
     text-decoration: none;
 }
@@ -86,6 +98,7 @@ li{
     gap: 0.5rem;
     justify-content: flex-start;
     align-items: center;
+    border-radius: 8px;
 }
 .sidebar-header{
     padding-left: 1.29rem;
@@ -97,12 +110,12 @@ li{
 .title{
     font-size: 1.4rem;
 }
-.sidebar-main{padding-left:1.5rem;
-
+.sidebar-main{
+    padding-left:1.5rem;
     grid-row:2;
 }
 .sidebar-subsection{
-  padding-left:1.5rem;
+    padding-left:1.5rem;
     grid-row: 3;
 }
 .sidebar-header>.icon{
@@ -127,6 +140,22 @@ li{
     transform: scale(1.2);
     
   }
+  nav .icon:hover{
+    animation: shake 0.3s;}
+  @keyframes shake {
+    0% { transform:  rotate(0deg); }
+    10% { transform: rotate(-5deg); }
+    20% { transform: rotate(5deg); }
+    30% { transform: rotate(0deg); }
+    40% { transform: rotate(5deg); }
+    50% { transform: rotate(-5deg); }
+    60% { transform: rotate(0deg); }
+    70% { transform: rotate(-5deg); }
+    80% { transform: rotate(5deg); }
+    90% { transform: rotate(0deg); }
+    100% { transform: rotate(-5deg); }
+  }
+
   article .icon{
     fill: rgb(13, 13, 13);
   
@@ -209,6 +238,7 @@ li{
     font-weight: bold ;
     border: none;
     box-shadow: 0.1rem 0.1rem 0.1rem rgb(0, 0, 0, 0.1);
+    cursor: pointer;
 
   }
   .main{
@@ -373,5 +403,13 @@ li{
   #alex{
     background-image: url(assets/roman-synkevych-UT8LMo-wlyk-unsplash.jpg);
   }
-
-  
+article .icon:hover{
+  fill: orange;
+}
+button:hover
+{
+  transform: scale(1.1);
+  opacity: 1;
+  background-color:  rgb(44, 173, 243);
+  border: 1px #99ccff solid;
+}
