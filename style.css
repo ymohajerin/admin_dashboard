@@ -140,7 +140,7 @@ li{
     transform: scale(1.2);
     
   }
-  nav .icon:hover{
+  .nav-right .icon:hover{
     animation: shake 0.3s;}
   @keyframes shake {
     0% { transform:  rotate(0deg); }
